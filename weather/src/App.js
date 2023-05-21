@@ -30,21 +30,21 @@ useEffect(()=>{
    fetchweather();
 },[query,units]);
 
-const formatB = ()=>{
+// const formatB = ()=>{
   
-  if(weather.temp<=293){
-  return  "from-cyan-400 to-blue-600" ;}
+//   if(weather.temp<=293){
+//   return  "" ;}
 
-  else{
-  return "from-yellow-500 to-orange-500"}
-}
+//   else{
+//   return "from-yellow-500 to-orange-500"}
+// }
 
 
 
   return (
  <>
  <div className={`mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br h-fit shadow-xl 
- shadow-gray-400 ${formatB()} `}>< Homer setQuery={setQuery}/>
+ shadow-gray-400 from-cyan-400 to-blue-600 `}>< Homer setQuery={setQuery}/>
 
 {(weather && <div>
 < Home setQuery={setQuery} units={units} setUnits={setUnits}/>
